@@ -1,0 +1,75 @@
+/* paleta de colores para el codigo*/
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #81DBF6;
+    --secundario: #f54d1a;
+    --terciario: #BBD3DC;
+    --degradado: #E1FFFC;
+
+}
+/*Con este codigo de html y body, es para hacer que  sea mas facil trabajar con la escala "em" y poder hacer calculos mas faciles.
+Es decir que 1em = 10px. ya con esto se calcura mas facil las escalas de textos e imagenes*/
+html{
+    font-size: 62,5%;
+    box-sizing: border-box; /*Hack para box model*/
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body{
+    font-size: 12px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--degradado)0%, var(--blanco)100%);
+    
+}
+.titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--secundario);
+
+
+}
+h2, h3  {
+    color: var(--secundario);
+}
+/*Contenedores para que todo quede centrado*/
+.contenedor {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.contenedor h2{
+    text-align: justify;
+    font-weight: bold;
+}
+
+/*Edicion de Imagenes*/
+.imagen-fondo {
+    width: 40rem;
+    height: 25rem;
+    margin: auto;
+    padding: auto;
+    border-radius: 1rem;
+}
+.imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.video{
+    border-radius: 1rem;
+}
+.video1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}  
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
